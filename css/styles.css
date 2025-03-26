@@ -14,12 +14,22 @@ body {
   background-color: #ffffff;
 }
 .container { 
-max-width: 1440px;
-padding-left: 156px;  
-padding-right: 156px;
-margin-left: 0;
-margin-right: 0;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
 }
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -41,6 +51,8 @@ link:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 24px 0;
+  margin-right: 76px;
 }
 .header-note {
   color: #2e2f42;
@@ -53,6 +65,13 @@ link:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-link {
+  padding: 24px 0;
+  display: block;
 }
 .address-header {
   font-style: normal;
@@ -63,6 +82,7 @@ link:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-left: auto;
 }
 .address-link:hover {
   color: #404bbf;
@@ -72,6 +92,8 @@ link:focus {
 }
 .address-link {
   color: #434455;
+  padding: 24px 0;
+  display: block;
 }
 .link {
   color: #2e2f42;
@@ -85,6 +107,11 @@ link:focus {
 .first-section {
   background-color: #2e2f42;
 }
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
 .title {
   font-weight: 700;
@@ -93,18 +120,30 @@ link:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+padding-top: 188px;
+padding-left: 316px;
+padding-right: 316px;
+margin-bottom: 48px;
 }
 .main-page-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
 
   /* line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px;
+  width: 169px;
+  height: 56px;
+  margin-bottom: 188px;
+  margin-left: 480px;
 }
 .main-page-btn:hover {
   background-color: #404bbf;
@@ -112,6 +151,14 @@ link:focus {
 .main-page-btn:focus {
   background-color: #404bbf;
 }
+.features-list {
+  display: flex;
+  align-items: center;
+  margin: 120px auto;
+  gap: 24px;
+  width: calc((100% - (3 * 24)) / 4);
+}
+
 .title-descr {
   font-weight: 500;
   font-size: 20px;
@@ -120,6 +167,7 @@ link:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .descr {
   font-weight: 400;
@@ -130,6 +178,7 @@ link:focus {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .third-section {
   background-color: #f4f4fd;
 }
