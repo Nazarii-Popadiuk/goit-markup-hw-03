@@ -1,7 +1,24 @@
+h1, h2, h3, p {
+  margin: 0;
+}
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+.container { 
+max-width: 1440px;
+padding-left: 156px;  
+padding-right: 156px;
+margin-left: 0;
+margin-right: 0;
 }
 a {
   text-decoration: none;
