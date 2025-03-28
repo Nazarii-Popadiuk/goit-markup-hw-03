@@ -1,8 +1,17 @@
 h1, h2, h3, p {
   margin: 0;
 }
-.second-subtitle {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 ul, ol {
   margin: 0;
@@ -109,6 +118,8 @@ link:focus {
 }
 .first-section {
   background-color: #2e2f42;
+  padding: 188px 0 188px;
+  justify-content: center;
 }
 .header-contacts {
   display: flex;
@@ -123,10 +134,9 @@ link:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  padding-top: 188px;
-  padding-left: 316px;
-  padding-right: 316px;
-  margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: 316px;
+  
 }
 .main-page-btn {
   font-family: "Roboto", sans-serif;
@@ -134,7 +144,6 @@ link:focus {
   font-size: 16px;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  justify-content: flex-start;
 
   /* line-height: 24px; */
   line-height: 1.5;
@@ -142,10 +151,11 @@ link:focus {
   color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px;
-  width: 169px;
-  height: 56px;
-  margin-bottom: 188px;
+  border: none;
+  min-width: 169px;
+  display: block;
+  padding: 16px 32px;
+  margin-top: 48px;
   margin-left: 480px;
 }
 .main-page-btn:hover {
@@ -154,13 +164,18 @@ link:focus {
 .main-page-btn:focus {
   background-color: #404bbf;
 }
-.features-list {
+.second-section {
+  padding: 120px 0;
+}
+.sec-sect-list {
   display: flex;
   align-items: center;
-  margin: 120px auto;
   gap: 24px;
-  width: calc((100% - (3 * 24)) / 4);
 }
+.features-list {
+width: calc((100% - (3 * 24)) / 4);
+}
+
 
 .title-descr {
   font-weight: 500;
@@ -184,18 +199,16 @@ link:focus {
 
 .third-section {
   background-color: #f4f4fd;
+  padding: 120px 0;
+
 }
 .staff {
   display: flex;
   align-items: center;
-  padding-bottom: 120px;
-  margin: 0 auto;
   gap: 24px;
-  width: calc((100% - (3 * 24)) / 4);
 }
 
 .subtitle-team {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .subtitle {
@@ -222,6 +235,7 @@ link:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .position {
   font-weight: 400;
@@ -234,24 +248,23 @@ link:focus {
   color: #434455;
 }
 .name-position {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 32px auto;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 32px 0;
+   width: calc((100% - (3 * 24)) / 4);
+}
+.forth-section {
+  padding: 120px 0;
 }
 
 .subtitle-portfolio {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
-.portfolio-list {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.portfolio-list {
   width: calc((100% - (2 * 24)) / 3);
- gap: 48px 24px;
- padding-bottom: 120px;
 }
 .portfolio-item {
   font-weight: 500;
@@ -262,6 +275,7 @@ link:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .portfolio-item-descr {
   font-weight: 400;
@@ -274,12 +288,9 @@ link:focus {
 }
 
 .item-descr {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+ padding: 32px 16px;
+ border: 1px solid #e7e9fc;
+ border-top: none;
 }
 #footer-logo {
   font-family: "Raleway", sans-serif;
@@ -292,7 +303,7 @@ link:focus {
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .footer-text {
   font-weight: 400;
